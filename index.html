@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+
+  <h1>JavaScript - Algoritmos</h1>
+
+  <script>
+
+    /* Elabore um algoritmo que leia um número.
+    Se positivo, armazene-o em uma variável chamada “A”, se for
+    negativo, em uma variável chamada “B”. No final, deve mostrar
+    o resultado das duas variáveis. */
+
+    var cestaDeNumeros = [1, -1, 2, -2, 3, -3];
+    var numerosPositivos = [];
+    var numerosNegativos = [];
+
+    for (var cep = 0; cep <= cestaDeNumeros.length; cep++) {
+      if (cestaDeNumeros[cep] > 0) {
+        numerosPositivos.push(cestaDeNumeros[cep]);
+      } else if (cestaDeNumeros[cep] < 0) {
+        numerosNegativos.push(cestaDeNumeros[cep]);
+      } else {
+        continue;
+      }
+    }
+
+    console.log("Números positivos: " + numerosPositivos);
+    console.log("Números negativos: " + numerosNegativos);
+
+  </script>
+  
+</body>
+</html>
